@@ -1,0 +1,399 @@
+30 Days JavaScript Roadmap (Basics → Advanced)
+✅ WEEK 1 — Absolute Fundamentals
+📅 Day 1 – Introduction & Setup
+
+What is JavaScript?
+
+How JS runs (Browser + Engine concept)
+
+Script tag basics
+
+console.log()
+
+Comments
+
+Code execution order
+
+📅 Day 2 – Variables
+
+var vs let vs const
+
+Scope (block vs function)
+
+Hoisting
+
+Temporal Dead Zone (TDZ)
+
+Strict mode
+
+📅 Day 3 – Data Types
+
+Primitive types
+
+String
+
+Number
+
+Boolean
+
+null
+
+undefined
+
+Symbol (intro)
+
+Reference types
+
+Object
+
+Array
+
+Function
+
+typeof operator
+
+📅 Day 4 – Type Conversion
+
+Implicit coercion
+
+Explicit conversion
+
+String ↔ Number
+
+Boolean conversion
+
+Truthy & Falsy values
+
+📅 Day 5 – Operators
+
+Arithmetic operators
+
+Comparison operators
+
+Logical operators
+
+Strict equality (===) vs loose (==)
+
+Ternary operator
+
+Nullish coalescing (??)
+
+Optional chaining (?.)
+
+📅 Day 6 – Control Flow
+
+if / else
+
+switch
+
+Nested conditions
+
+Best practices
+
+📅 Day 7 – Loops
+
+for loop
+
+while loop
+
+do while
+
+break / continue
+
+Loop through arrays
+
+for...of
+
+for...in
+
+✅ WEEK 2 — Functions & Core Concepts
+📅 Day 8 – Functions Basics
+
+Function declaration
+
+Function expression
+
+Arrow functions
+
+Parameters vs arguments
+
+Return statement
+
+Default parameters
+
+📅 Day 9 – Advanced Functions
+
+Callback functions
+
+Higher-order functions
+
+Function inside function
+
+Pure vs impure functions
+
+📅 Day 10 – Scope & Execution
+
+Global scope
+
+Local scope
+
+Lexical scope
+
+Scope chain
+
+Execution context (intro)
+
+📅 Day 11 – Closures (Very Important)
+
+What is closure
+
+Practical examples
+
+Data hiding
+
+Real-world use cases
+
+📅 Day 12 – Arrays (Deep)
+
+Creating arrays
+
+push, pop, shift, unshift
+
+slice vs splice
+
+forEach
+
+map
+
+filter
+
+reduce
+
+find
+
+some / every
+
+📅 Day 13 – Objects (Very Important)
+
+Creating objects
+
+Dot vs bracket notation
+
+this keyword
+
+Object methods
+
+Object.keys()
+
+Object.values()
+
+Object.entries()
+
+Destructuring
+
+Spread operator
+
+📅 Day 14 – Object Advanced Concepts
+
+Shallow copy vs deep copy
+
+Object.assign()
+
+JSON cloning method
+
+Reference behavior
+
+✅ WEEK 3 — Advanced JavaScript
+📅 Day 15 – ES6+ Features
+
+let & const recap
+
+Template literals
+
+Spread operator
+
+Rest operator
+
+Destructuring
+
+Default parameters
+
+Enhanced object literals
+
+📅 Day 16 – Error Handling
+
+try / catch
+
+throw
+
+Custom errors
+
+finally block
+
+📅 Day 17 – Asynchronous JavaScript Intro
+
+Synchronous vs asynchronous
+
+setTimeout
+
+setInterval
+
+📅 Day 18 – Callbacks
+
+Callback concept
+
+Callback hell
+
+Inversion of control problem
+
+📅 Day 19 – Promises
+
+Promise creation
+
+resolve & reject
+
+.then()
+
+.catch()
+
+.finally()
+
+📅 Day 20 – Async / Await
+
+async keyword
+
+await keyword
+
+Error handling with async
+
+Promise chaining vs async/await
+
+📅 Day 21 – Event Loop (Advanced)
+
+Call stack
+
+Web APIs
+
+Callback queue
+
+Microtask queue
+
+Event loop mechanism
+
+✅ WEEK 4 — Deep JavaScript Concepts (Professional Level)
+📅 Day 22 – Prototypes & Inheritance
+
+Prototype chain
+
+proto
+
+Constructor functions
+
+Prototype inheritance
+
+📅 Day 23 – Classes (ES6)
+
+class keyword
+
+constructor
+
+methods
+
+inheritance (extends)
+
+super keyword
+
+📅 Day 24 – this Keyword (Deep Understanding)
+
+this in global scope
+
+this in function
+
+this in object
+
+this in arrow function
+
+bind(), call(), apply()
+
+📅 Day 25 – Modules
+
+ES Modules (import/export)
+
+Named exports
+
+Default exports
+
+Module scope
+
+📅 Day 26 – Advanced Array & Object Patterns
+
+Method chaining
+
+Functional programming patterns
+
+Immutability
+
+Currying (intro)
+
+📅 Day 27 – Memory & Performance
+
+Stack vs Heap
+
+Garbage collection basics
+
+Memory leaks concept
+
+📅 Day 28 – DOM Basics (Important for understanding JS environment)
+
+Selecting elements
+
+Event listeners
+
+Event bubbling
+
+Event delegation
+
+📅 Day 29 – Advanced Patterns
+
+Debouncing
+
+Throttling
+
+Memoization
+
+Factory pattern (intro)
+
+📅 Day 30 – Mini JavaScript Project
+
+Build:
+
+To-Do App
+
+Calculator
+
+Quiz App
+
+Expense Tracker
+
+Apply:
+
+Functions
+
+Objects
+
+Arrays
+
+Async
+
+DOM
+
+🎯 After 30 Days You Should Be Comfortable With
+
+✔ Variables & scope
+✔ Functions & closures
+✔ Arrays & objects deeply
+✔ Async programming
+✔ Prototypes & classes
+✔ Event loop
+✔ Modern ES6+ syntax
+✔ Writing clean, modular JS

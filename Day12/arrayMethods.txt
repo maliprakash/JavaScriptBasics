@@ -1,0 +1,45 @@
+| Method            | Purpose                   | Returns             | Example                               |
+| ----------------- | ------------------------- | ------------------- | ------------------------------------- |
+| `push()`          | Add element to end        | New length          | `[1,2].push(3)` → `[1,2,3]`           |
+| `pop()`           | Remove last element       | Removed element     | `[1,2,3].pop()` → `3`                 |
+| `unshift()`       | Add element to start      | New length          | `[2,3].unshift(1)` → `[1,2,3]`        |
+| `shift()`         | Remove first element      | Removed element     | `[1,2,3].shift()` → `1`               |
+| `map()`           | Transform elements        | New array           | `[1,2].map(x=>x*2)` → `[2,4]`         |
+| `filter()`        | Select elements           | New array           | `[1,2,3].filter(x=>x>1)` → `[2,3]`    |
+| `reduce()`        | Aggregate to single value | Single value        | `[1,2,3].reduce((a,b)=>a+b,0)` → `6`  |
+| `find()`          | First match               | Element / undefined | `[1,2,3].find(x=>x>1)` → `2`          |
+| `findLast()`      | Last match                | Element / undefined | `[1,2,3].findLast(x=>x>1)` → `3`      |
+| `findIndex()`     | Index of first match      | Index               | `[1,2,3].findIndex(x=>x>1)` → `1`     |
+| `findLastIndex()` | Index of last match       | Index               | `[1,2,3].findLastIndex(x=>x>1)` → `2` |
+| `some()`          | Any match?                | Boolean             | `[1,2].some(x=>x>1)` → `true`         |
+| `every()`         | All match?                | Boolean             | `[1,2].every(x=>x>0)` → `true`        |
+| `includes()`      | Check value exists        | Boolean             | `[1,2].includes(2)` → `true`          |
+| `indexOf()`       | First index of value      | Index               | `[1,2,2].indexOf(2)` → `1`            |
+| `lastIndexOf()`   | Last index of value       | Index               | `[1,2,2].lastIndexOf(2)` → `2`        |
+| `concat()`        | Merge arrays              | New array           | `[1].concat([2])` → `[1,2]`           |
+| `slice()`         | Extract portion           | New array           | `[1,2,3].slice(1)` → `[2,3]`          |
+| `splice()`        | Add/remove elements       | Removed elements    | `[1,2,3].splice(1,1)`                 |
+| `flat()`          | Flatten array             | New array           | `[1,[2]].flat()` → `[1,2]`            |
+| `flatMap()`       | map + flat                | New array           | `[1,2].flatMap(x=>[x,x])`             |
+| `forEach()`       | Loop (no return)          | undefined           | `[1,2].forEach(x=>...)`               |
+| `join()`          | Convert to string         | String              | `[1,2].join("-")` → `"1-2"`           |
+| `toString()`      | Convert to string         | String              | `[1,2].toString()`                    |
+| `reverse()`       | Reverse array             | Same array          | `[1,2].reverse()`                     |
+| `sort()`          | Sort elements             | Same array          | `[3,1].sort()`                        |
+| `fill()`          | Fill with value           | Same array          | `[1,2].fill(0)`                       |
+| `copyWithin()`    | Copy part inside array    | Same array          | `[1,2,3].copyWithin(0,1)`             |
+| `entries()`       | Key-value iterator        | Iterator            | `[1,2].entries()`                     |
+| `keys()`          | Index iterator            | Iterator            | `[1,2].keys()`                        |
+| `values()`        | Value iterator            | Iterator            | `[1,2].values()`                      |
+| `at()`            | Access by index           | Element             | `[1,2].at(-1)` → `2`                  |
+
+
+🔥 Important Classification (VERY USEFUL)
+✅ Returns New Array
+map, filter, slice, concat, flat, flatMap
+⚠️ Modifies Original Array
+push, pop, shift, unshift, splice, sort, reverse, fill
+🔹 Returns Boolean
+some, every, includes
+🔹 Returns Single Value
+reduce, find, at
