@@ -21,5 +21,5 @@ As a result, the value of the variables are swapped.
 You can learn more about destructuring in JavaScript Destructing Assignment.
 
 Note: You can also swap strings or other data types using this method.
-
+1
 */
