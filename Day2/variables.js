@@ -29,7 +29,7 @@ We will understand each deeply.
 
 /*
 ========================================================
-1️⃣ VAR (Function Scoped - Problematic)
+1️ VAR (Function Scoped - Problematic)
 ========================================================
 
 - Can be re-declared
@@ -60,7 +60,7 @@ console.log(age);
 
 /*
 ========================================================
-2️⃣ LET (Block Scoped - Recommended)
+2️ LET (Block Scoped - Recommended)
 ========================================================
 
 - Cannot be re-declared in same scope
@@ -87,14 +87,14 @@ if (true) {
 }
 
 // console.log(country);
-// ❌ Error: country is not defined
+// Error: country is not defined
 // Because let respects block scope
 
 
 
 /*
 ========================================================
-3️⃣ CONST (Block Scoped - Most Recommended)
+3️ CONST (Block Scoped - Most Recommended)
 ========================================================
 
 - Cannot be re-declared
@@ -109,7 +109,7 @@ const pi = 3.14;
 console.log(pi);
 
 // pi = 3.1415; 
-// ❌ Error: Assignment to constant variable
+// Error: Assignment to constant variable
 
 
 /*
@@ -129,7 +129,7 @@ user.age = 30; // Allowed
 console.log(user);
 
 // user = {}; 
-// ❌ Error (cannot reassign reference)
+// Error (cannot reassign reference)
 
 
 
@@ -167,7 +167,7 @@ testVar = 100;
 */
 
 // console.log(testLet);
-// ❌ ReferenceError
+// ReferenceError
 
 let testLet = 200;
 
@@ -203,7 +203,7 @@ BEST PRACTICE RULE (INDUSTRY STANDARD)
 
 ✔ Always use const by default.
 ✔ Use let only when value needs to change.
-❌ Never use var in modern JavaScript.
+ Never use var in modern JavaScript.
 
 Example:
 */

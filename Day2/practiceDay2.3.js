@@ -2,13 +2,13 @@
 
 // For dynamic values what are the different ways ?
 
-Good 👍 this is an important concept — especially for API automation and payload building.
+Good this is an important concept — especially for API automation and payload building.
 
 In JavaScript, dynamic values mean values that change based on variables, user input, API response, time, etc.
 
 Let’s see all the common ways to handle dynamic values.
 
-1️⃣ Template Literals (✅ Best & Modern Way)
+1️ Template Literals (Best & Modern Way)
 
 Uses backticks ` ` and ${}
 
@@ -26,9 +26,9 @@ const total = `Total amount is ${price + tax}`;
 ✔ Industry standard
 ✔ Used heavily in Playwright / Node.js
 
-👉 Recommended way
+Recommended way
 
-2️⃣ String Concatenation (Old Way)
+2️ String Concatenation (Old Way)
 
 Using + operator
 
@@ -41,16 +41,16 @@ Multiple values:
 const total = "Total is " + (price + tax);
 
 
-❌ Hard to read in complex strings
-❌ Not modern style
+Hard to read in complex strings
+Not modern style
 
-3️⃣ Using .concat() Method
+3️ Using .concat() Method
 const message = "Hello ".concat(name);
 
 
 Rarely used in modern projects.
 
-4️⃣ Dynamic Object Values (Very Important for APIs 🔥)
+4️ Dynamic Object Values (Very Important for APIs )
 
 In API automation, dynamic values are usually inside JSON objects.
 
@@ -68,7 +68,7 @@ const payload = {
   orderId, // same as orderId: orderId
 };
 
-5️⃣ Dynamic Property Names
+5️ Dynamic Property Names
 
 Very powerful feature.
 
@@ -83,14 +83,14 @@ console.log(user.username); // Prakash
 
 Used when keys are dynamic.
 
-6️⃣ Using Functions (Dynamic Calculation)
+6️ Using Functions (Dynamic Calculation)
 function generateUser(id) {
   return `USER_${id}`;
 }
 
 const userId = generateUser(1001);
 
-7️⃣ Using Date / Random (Common in Automation)
+7️Using Date / Random (Common in Automation)
 const uniqueEmail = `test${Date.now()}@mail.com`;
 
 
@@ -107,15 +107,15 @@ Payload uniqueness
 
 Test data generation
 
-🔥 Comparison Summary
+Comparison Summary
 Method	Modern?	Recommended?	Used For
-Template literals	✅ Yes	⭐⭐⭐⭐⭐	Strings
-Concatenation +	Old	❌ Avoid	Simple cases
-.concat()	Old	❌ Rare	Legacy code
-Dynamic object keys	✅ Yes	⭐⭐⭐⭐	JSON payload
-Functions	✅ Yes	⭐⭐⭐⭐⭐	Logic-based values
-Date/Random	✅ Yes	⭐⭐⭐⭐⭐	Automation
-🎯 Final Industry Rule
+Template literals	Yes Strings
+Concatenation +	Old	Avoid	Simple cases
+.concat()	Old	Rare	Legacy code
+Dynamic object keys	Yes	JSON payload
+Functions	Yes	Logic-based values
+Date/Random	Yes	Automation
+Final Industry Rule
 
 For dynamic values:
 

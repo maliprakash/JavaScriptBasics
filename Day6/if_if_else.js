@@ -8,7 +8,6 @@ if(true){
     console.log("This block runs only if block is true");
 }
 
-
 if(false){
     console.log("This block will only run when if condition is false");
 }
@@ -18,7 +17,6 @@ let age = 18;
 if(age >= 18){
     console.log("You can vote");
 }
-
 
 let name1 = "Prakash";
 

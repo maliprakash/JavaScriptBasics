@@ -16,10 +16,10 @@ Understanding this deeply makes you a strong developer.
 TWO TYPES OF TYPE CONVERSION
 ========================================================
 
-1️⃣ Explicit Conversion (Manual)
+1️ Explicit Conversion (Manual)
    - Developer converts type intentionally.
 
-2️⃣ Implicit Conversion (Coercion)
+2️ Implicit Conversion (Coercion)
    - JavaScript automatically converts type.
 
 We will understand both carefully.
@@ -60,8 +60,6 @@ Number("abc") → NaN -> Not a Number
 */
 
 console.log(Number("abc")); // NaN
-
-
 
 /*
 --- NUMBER TO STRING ---
@@ -269,33 +267,33 @@ Mastering coercion prevents hidden logic errors.
 Coercion – मराठीत अर्थ
 
 Coercion (कोअर्शन) म्हणजे:
-👉 एखाद्या value चा type जबरदस्तीने दुसऱ्या type मध्ये बदलणे
+एखाद्या value चा type जबरदस्तीने दुसऱ्या type मध्ये बदलणे
 
 सोप्या शब्दांत:
 
 JavaScript जेव्हा आपोआप (automatic) type बदलते त्याला Type Coercion म्हणतात.
 
-🔥 JavaScript मधील उदाहरण
+JavaScript मधील उदाहरण
 console.log("5" + 2);
 // Output: "52"
 
 
-👉 इथे "5" हा string आहे
-👉 2 हा number आहे
-👉 + operator मुळे number ला string मध्ये convert केले
-👉 Result: "52"
+इथे "5" हा string आहे
+ 2 हा number आहे
++ operator मुळे number ला string मध्ये convert केले
+Result: "52"
 
 हीच coercion आहे.
 
-📌 अजून उदाहरण
+अजून उदाहरण
 console.log("5" - 2);
 // Output: 3
 
 
-👉 - operator string ला number मध्ये convert करतो
-👉 Result: 3
+- operator string ला number मध्ये convert करतो
+Result: 3
 
-📖 मराठीत सोपं स्पष्टीकरण
+मराठीत सोपं स्पष्टीकरण
 English	Marathi Meaning
 Coercion	जबरदस्तीने बदल
 Type Coercion	data type चा जबरदस्ती बदल

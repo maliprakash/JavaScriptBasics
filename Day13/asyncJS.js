@@ -54,22 +54,30 @@ Async Task (after 2 seconds)
 ============================================================
 CALLBACKS
 ============================================================
-
-A function passed as argument
-executed later
+A callback is a function passed as an argument to another function, which is executed after the completion of a specific task.
 */
 
-function fetchData(callback) {
-    setTimeout(() => {
-        console.log("Data fetched");
-        callback();
-    }, 1000);
+
+
+function greet(name, callback) {
+    console.log("Hello " + name);
+    callback();
 }
 
-fetchData(() => {
-    console.log("Processing data");
-});
+function sayBye() {
+    console.log("Goodbye!");
+}
 
+greet("Prakash", sayBye);
+
+//Hello Prakash
+//Goodbye!
+
+/*Here:
+
+sayBye is a callback function
+It is passed to greet and executed later
+*/
 
 /*
 ============================================================
@@ -105,11 +113,21 @@ PROMISES (IMPORTANT)
 A Promise represents:
 👉 Future value (resolved/rejected)
 
-States:
-- pending
-- fulfilled
-- rejected
+Promise States
+
+A Promise has 3 states:
+
+Pending ⏳ → initial state
+Fulfilled ✅ → operation successful
+Rejected ❌ → operation failed
+
 */
+
+/*A Promise is an object that represents the future result of an asynchronous operation.
+
+It’s like saying: “I promise I’ll give you a result later.”*/
+
+
 
 let myPromise = new Promise((resolve, reject) => {
 
@@ -122,7 +140,7 @@ let myPromise = new Promise((resolve, reject) => {
     }
 });
 
-
+//Consuming a Promise
 myPromise
     .then(result => {
         console.log(result);
@@ -140,13 +158,13 @@ PROMISE CHAINING
 
 function step1() {
     return new Promise(resolve => {
-        setTimeout(() => resolve("Step 1 done"), 1000);
+        setTimeout(() => resolve("Step 1 done ........."), 1000);
     });
 }
 
 function step2() {
     return new Promise(resolve => {
-        setTimeout(() => resolve("Step 2 done"), 1000);
+        setTimeout(() => resolve("Step 2 done ........."), 1000);
     });
 }
 
@@ -301,5 +319,5 @@ KEY TAKEAWAYS – DAY 13
 ✔ Event loop handles execution
 ✔ Async/Await is modern standard
 
-This is CORE for backend development 🔥
+This is CORE for backend development 
 */
