@@ -397,3 +397,5 @@ DOM
 ✔ Event loop
 ✔ Modern ES6+ syntax
 ✔ Writing clean, modular JS
+
+// strict mode;

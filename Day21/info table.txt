@@ -1,0 +1,18 @@
+| Feature                        | Named Imports                     | Default Imports                 | Alias Imports                                 |
+| ------------------------------ | --------------------------------- | ------------------------------- | --------------------------------------------- |
+| Purpose                        | Import specific exported values   | Import main/default export      | Rename imported value                         |
+| Import Syntax                  | `import { add } from "./file.js"` | `import greet from "./file.js"` | `import { add as addition } from "./file.js"` |
+| Export Type Required           | Named export                      | Default export                  | Named export                                  |
+| Uses Curly Braces `{}`         | ✅ Yes                             | ❌ No                            | ✅ Yes                                         |
+| Can Rename While Importing     | ⚠️ Using `as` only                | ✅ Any name directly             | ✅ Main purpose                                |
+| Number Allowed Per File        | Multiple                          | Only ONE                        | Multiple                                      |
+| Import Name Must Match Export? | ✅ Yes                             | ❌ No                            | ❌ No                                          |
+| Common Use Case                | Utility functions/constants       | Main functionality/class        | Avoid naming conflicts                        |
+| Example Export                 | `export function add(){}`         | `export default function(){}`   | `export function add(){}`                     |
+
+
+| Type           | Memory Trick                      |
+| -------------- | --------------------------------- |
+| Named Import   | “Import exact exported name”      |
+| Default Import | “Import main thing with any name” |
+| Alias Import   | “Import and rename”               |
